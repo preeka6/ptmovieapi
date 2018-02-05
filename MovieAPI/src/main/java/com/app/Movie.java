@@ -11,19 +11,11 @@ public class Movie {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id1;
 	@NotNull
 	private long id;
 	private String title;
 	private String director;
 	
-	
-	public long getId1() {
-		return id1;
-	}
-	public void setId1(long id1) {
-		this.id1 = id1;
-	}
 	public long getId() {
 		return id;
 	}

@@ -14,11 +14,11 @@
         <relativePath/>
     </parent>
 
-    <properties>
-        <start-class>com.app.Application</start-class>
-        <main.basedir>${basedir}/../..</main.basedir>
-        <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
-    </properties>
+<!--     <properties> -->
+<!--         <start-class>com.app.Application</start-class> -->
+<!--         <main.basedir>${basedir}/../..</main.basedir> -->
+<!--         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot> -->
+<!--     </properties> -->
 
     <dependencies>
         <dependency>
@@ -48,20 +48,20 @@
             <artifactId>h2</artifactId>
         </dependency>
     </dependencies>
-   <repositories>
-        <repository>
-            <id>spring-milestone</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </repository>
+<!--    <repositories> -->
+<!--         <repository> -->
+<!--             <id>spring-milestone</id> -->
+<!--             <url>https://repo.spring.io/libs-release</url> -->
+<!--         </repository> -->
 
-        <repository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+<!--         <repository> -->
+<!--             <id>sonatype-snapshots</id> -->
+<!--             <url>https://oss.sonatype.org/content/repositories/snapshots</url> -->
+<!--             <snapshots> -->
+<!--                 <enabled>true</enabled> -->
+<!--             </snapshots> -->
+<!--         </repository> -->
+<!--     </repositories> -->
 
     <build>
         <plugins>
@@ -72,5 +72,5 @@
         </plugins>
     </build>
 
-    <artifactId>QuestionSeven</artifactId>
+    <artifactId>Movie-api</artifactId>
 </project>

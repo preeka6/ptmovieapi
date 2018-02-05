@@ -2,8 +2,8 @@
 
 This project contains the answer to the following question.
 
-Write a web app with using Spring Boot,there will be User registration with fields
-"name" , "surname" and "address" and you will display these informantions in a
+Write a web app with using Spring Boot,there will be Movie registration with fields
+"Title" and "Director" and will display these information in a
 grid. Also we could do UPDATE,DELETE,CREATE,READ operations in grid.
 
 # Which Technologies We Will Use?
@@ -28,9 +28,9 @@ you can go to project directory, then run the following command;
 
       mvn clean install 
 
-      java -jar target/myapp-1.0-SNAPSHOT.jar
+      java -jar target/Movie-api-1.0-SNAPSHOT.jar
 
-`myapp will be the name of your project.
+`Movie-api will be the name of your project.
 
 If everything works correctly, you can start the CRUD operations with following URL.
 
