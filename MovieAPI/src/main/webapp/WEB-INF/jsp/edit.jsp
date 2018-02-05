@@ -8,12 +8,7 @@
 <form action='/index/update' method='post'>
  
     <table class='table table-hover table-responsive table-bordered'>
- 
-        <tr>
-            <td><b>ID</b></td>
-            <td><input type='text' name='id' class='form-control' size="10" value="${movie.id}" /></td>
-        </tr>
- 
+  
         <tr>
             <td><b>Title</b></td>
             <td><input type='text' name='title' class='form-control' size="30" value="${movie.title}" /></td>
@@ -25,7 +20,7 @@
             
         </tr>
  
- 			<input type='hidden' id='id1' rows='5' class='form-control' name='id1' value="${movie.id1}"/>
+  			<input type='hidden' id='id' rows='5' class='form-control' name='id' value="${movie.id}"/>
         <tr>
             <td></td>
             <td>
@@ -38,5 +33,3 @@
 
 
 </div>
-
-<jsp:include page="footer.jsp"></jsp:include>

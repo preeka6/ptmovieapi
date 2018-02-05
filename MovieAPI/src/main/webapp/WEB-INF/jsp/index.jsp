@@ -8,10 +8,6 @@
  
     <table class='table table-hover table-responsive table-bordered'>
  
-        <tr>
-            <td><b>ID</b></td> 
-            <td><input type='text' name='id' class='form-control' size="10" required/></td>
-        </tr>
  
         <tr>
             <td><b>Title</b></td>
@@ -58,12 +54,12 @@
         <td><c:out value="${lom.director}"></c:out></td>
 
 			 <td>
-             <a href="/index/${lom.id1}/edit">
+             <a href="/index/${lom.id}/edit">
                 <button type="submit" class="btn btn-primary">Edit Movie</button>
                 </a>
             </td>
             <td>
-             <a href="/index/${lom.id1}/delete">
+             <a href="/index/${lom.id}/delete">
                 <button type="submit" class="btn btn-primary">Delete Movie</button>
                 </a>
             </td>
@@ -73,5 +69,3 @@
     </tbody>
   </table>
 </div>
-
-<jsp:include page="footer.jsp"></jsp:include>

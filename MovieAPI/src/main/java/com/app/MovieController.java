@@ -28,9 +28,9 @@ public class MovieController {
         return model;
     }
 	
-	@RequestMapping(value = "/{id1}/delete", method = RequestMethod.GET)
-	    public ModelAndView deleteMovies(@PathVariable long id1) {
-		movieService.deleteMovie(id1);
+	@RequestMapping(value = "/{id}/delete", method = RequestMethod.GET)
+	    public ModelAndView deleteMovies(@PathVariable long id) {
+		movieService.deleteMovie(id);
 	        return new ModelAndView("redirect:/index");
 	    }
 	   
@@ -48,8 +48,8 @@ public class MovieController {
     	}
     	return new ModelAndView("redirect:/index");
     }
-    	  @RequestMapping(value = "/{id1}/edit", method = RequestMethod.GET)
-    	    public ModelAndView edit(@PathVariable("id1") long id1) {
+    	  @RequestMapping(value = "/{id}/edit", method = RequestMethod.GET)
+    	    public ModelAndView edit(@PathVariable("id") long id1) {
     		  ModelAndView model = new ModelAndView("edit");
     	        Movie movie = movieService.getMovieById(id1);
     	        model.addObject("movie", movie);
@@ -57,10 +57,10 @@ public class MovieController {
     	    }
     	  
     	   @RequestMapping(value = "/update", method = RequestMethod.POST)
-    	    public ModelAndView update(@RequestParam("id1") long id1,
+    	    public ModelAndView update(
     	                               @RequestParam("id") long id,@RequestParam("title") String title,
     	    						   @RequestParam("director") String director) {
-    	        Movie movie = movieService.getMovieById(id1);
+    	        Movie movie = movieService.getMovieById(id);
     	        movie.setId(id);
     	        movie.setTitle(title);
     	        movie.setDirector(director);
